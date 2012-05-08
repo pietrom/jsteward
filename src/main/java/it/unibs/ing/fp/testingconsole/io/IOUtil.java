@@ -1,4 +1,4 @@
-package it.unibs.it.fp.testingconsole.io;
+package it.unibs.ing.fp.testingconsole.io;
 
 import java.io.PrintWriter;
 import java.util.Scanner;

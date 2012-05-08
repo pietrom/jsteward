@@ -1,7 +1,7 @@
-package it.unibs.it.fp.testingconsole.app;
+package it.unibs.ing.fp.testingconsole.app;
 
-import it.unibs.it.fp.testingconsole.hello.Hello;
-import it.unibs.it.fp.testingconsole.io.IOUtil;
+import it.unibs.ing.fp.testingconsole.hello.Hello;
+import it.unibs.ing.fp.testingconsole.io.IOUtil;
 
 import java.io.PrintWriter;
 import java.util.Scanner;

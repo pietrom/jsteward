@@ -1,4 +1,6 @@
-package it.unibs.it.fp.testingconsole.app;
+package it.unibs.ing.fp.testingconsole.app;
+
+import it.unibs.ing.fp.testingconsole.app.HelloApp;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

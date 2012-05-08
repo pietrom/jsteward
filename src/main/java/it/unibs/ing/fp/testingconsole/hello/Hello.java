@@ -1,4 +1,4 @@
-package it.unibs.it.fp.testingconsole.hello;
+package it.unibs.ing.fp.testingconsole.hello;
 
 public class Hello {
 	private final String baseMessage;

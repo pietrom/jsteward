@@ -1,4 +1,6 @@
-package it.unibs.it.fp.testingconsole.hello;
+package it.unibs.ing.fp.testingconsole.hello;
+
+import it.unibs.ing.fp.testingconsole.hello.Hello;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
