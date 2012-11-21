@@ -41,7 +41,81 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
-				<version>3.2</version>				
+				<version>3.2</version>
+				<configuration>
+					<reportPlugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-project-info-reports-plugin</artifactId>
+							<version>2.2</version>
+							<reports>
+							  <report>index</report>
+							  <report>project-team</report>
+							  <report>license</report>
+							  <report>mailing-list</report>
+							  <report>dependencies</report>
+							  <report>dependency-convergence</report>
+							  <report>plugin-management</report>
+							  <report>cim</report>
+							  <report>issue-tracking</report>
+							  <report>scm</report>
+							  <report>summary</report>
+							</reports>
+						  </plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-report-plugin</artifactId>
+							<version>2.6</version>
+						</plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-javadoc-plugin</artifactId>
+							<version>2.7</version>
+						</plugin>
+						<plugin>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>cobertura-maven-plugin</artifactId>
+							<version>2.4</version>
+						</plugin>
+						<plugin>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>taglist-maven-plugin</artifactId>
+							<version>2.4</version>
+						</plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-pmd-plugin</artifactId>
+							<version>2.5</version>
+							<configuration>
+							  <linkXref>true</linkXref>
+							  <minimumTokens>100</minimumTokens>
+							  <minimumPriority>3</minimumPriority>
+							  <!-- Change minimum priority to see more or less messages -->
+							  <targetJdk>1.6</targetJdk>
+							</configuration>
+						</plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-checkstyle-plugin</artifactId>
+							<version>2.6</version>
+							<configuration>
+							  <!-- Adopt config location to your needs, or remove configuration entry completly to use default version.
+							  <configLocation>http://stud.hs-heilbronn.de/~nischmid/development/checkstyle-config.xml</configLocation>
+							   -->
+							</configuration>
+						  </plugin>
+						  <plugin>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>findbugs-maven-plugin</artifactId>
+							<version>2.3.1</version>
+							<configuration>
+							  <argLine>-Xmx256m</argLine>
+							  <argLine>-XX:MaxPermSize=256m</argLine>
+							</configuration>
+							<!-- Usually findbugs needs a lot of memory, change these values if needed. -->
+						  </plugin>>
+					</reportPlugins>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>  
