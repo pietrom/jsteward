@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 public class HelloApp {
 	private final IOUtil io;
-	
+	// START SNIPPET: new-hello-app
 	public HelloApp(Scanner scanner, PrintWriter out) {
 		io = new IOUtil(scanner, out);
 	}
-
+	// END SNIPPET: new-hello-app
 	public void run() {
 		io.println("Welcome to HelloApp!");
 		boolean go = true;

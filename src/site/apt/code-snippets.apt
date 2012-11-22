@@ -1,0 +1,40 @@
+Code snippets
+
+  Java code snippet
+
+%{snippet|id=new-hello-app|file=src/main/java/it/unibs/ing/fp/testingconsole/app/HelloApp.java}
+
+  XML Code snippet
+
+%{snippet|id=compilation-properties|file=pom.xml}
+
+Main
+
+* First subsection
+
+  blah blah blah
+  blah blah blah
+  blah blah blah
+  blah blah blah
+  
+* Second subsection
+
+  blah blah blah
+  blah blah blah
+  blah blah blah
+  blah blah blah
+  
+** 2.1 inner subsection
+
+    blih blih blih
+    blih blih blih
+    blih blih blih
+  
+**  2.2 inner subsection
+
+    bloh bloh bloh
+    bloh bloh bloh
+    bloh bloh bloh
+    bloh bloh bloh
+  
+  
