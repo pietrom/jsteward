@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>it.unibs.ing.fp</groupId>
@@ -8,6 +9,19 @@
 	<packaging>jar</packaging>
 	<description>Console based steward, who always greets</description>
 	<url>https://github.com/pietrom/jsteward</url>
+	<licenses>
+		<license>
+		    <name>GPL 3.0</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+		</license>
+	</licenses>
+	<developers>
+	    <developer>
+		    <name>Pietro Martinelli</name>
+		    <email>amicofragile@gmail.com</email>
+		    <url>http://javapeanuts.blogspot.com</url>
+	    </developer>
+	</developers>
 	<!-- START SNIPPET: compilation-properties -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,7 +38,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -54,10 +68,10 @@
 						<version>1.3</version>
 					</dependency>
 					<dependency>
-	                  <groupId>org.apache.maven.doxia</groupId>
-	                  <artifactId>doxia-module-xhtml</artifactId>
-	                  <version>1.3</version>
-	                </dependency>
+						<groupId>org.apache.maven.doxia</groupId>
+						<artifactId>doxia-module-xhtml</artifactId>
+						<version>1.3</version>
+					</dependency>
 				</dependencies>
 				<configuration>
 					<reportPlugins>
@@ -66,19 +80,19 @@
 							<artifactId>maven-project-info-reports-plugin</artifactId>
 							<version>2.2</version>
 							<reports>
-							  <report>index</report>
-							  <report>project-team</report>
-							  <report>license</report>
-							  <report>mailing-list</report>
-							  <report>dependencies</report>
-							  <report>dependency-convergence</report>
-							  <report>plugin-management</report>
-							  <report>cim</report>
-							  <report>issue-tracking</report>
-							  <report>scm</report>
-							  <report>summary</report>
+								<report>index</report>
+								<report>project-team</report>
+								<report>license</report>
+								<report>mailing-list</report>
+								<report>dependencies</report>
+								<report>dependency-convergence</report>
+								<report>plugin-management</report>
+								<report>cim</report>
+								<report>issue-tracking</report>
+								<report>scm</report>
+								<report>summary</report>
 							</reports>
-						  </plugin>
+						</plugin>
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-surefire-report-plugin</artifactId>
@@ -104,11 +118,11 @@
 							<artifactId>maven-pmd-plugin</artifactId>
 							<version>2.5</version>
 							<configuration>
-							  <linkXref>true</linkXref>
-							  <minimumTokens>100</minimumTokens>
-							  <minimumPriority>3</minimumPriority>
-							  <!-- Change minimum priority to see more or less messages -->
-							  <targetJdk>1.6</targetJdk>
+								<linkXref>true</linkXref>
+								<minimumTokens>100</minimumTokens>
+								<minimumPriority>3</minimumPriority>
+								<!-- Change minimum priority to see more or less messages -->
+								<targetJdk>1.6</targetJdk>
 							</configuration>
 						</plugin>
 						<plugin>
@@ -116,24 +130,25 @@
 							<artifactId>maven-checkstyle-plugin</artifactId>
 							<version>2.6</version>
 							<configuration>
-							  <!-- Adopt config location to your needs, or remove configuration entry completly to use default version.
-							  <configLocation>http://stud.hs-heilbronn.de/~nischmid/development/checkstyle-config.xml</configLocation>
-							   -->
+								<!-- Adopt config location to your needs, or remove configuration 
+									entry completly to use default version. <configLocation>http://stud.hs-heilbronn.de/~nischmid/development/checkstyle-config.xml</configLocation> -->
 							</configuration>
-						  </plugin>
-						  <plugin>
+						</plugin>
+						<plugin>
 							<groupId>org.codehaus.mojo</groupId>
 							<artifactId>findbugs-maven-plugin</artifactId>
 							<version>2.3.1</version>
 							<configuration>
-							  <argLine>-Xmx256m</argLine>
-							  <argLine>-XX:MaxPermSize=256m</argLine>
+								<argLine>-Xmx256m</argLine>
+								<argLine>-XX:MaxPermSize=256m</argLine>
 							</configuration>
-							<!-- Usually findbugs needs a lot of memory, change these values if needed. -->
-						  </plugin>>
+							<!-- Usually findbugs needs a lot of memory, change these values if 
+								needed. -->
+						</plugin>
+						>
 					</reportPlugins>
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>  
+	</build>
 </project>
