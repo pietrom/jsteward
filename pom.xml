@@ -7,7 +7,7 @@
 	<artifactId>jsteward</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<description>Console based steward, who always greets</description>
+	<description>Console based steward, who always greets ;-)</description>
 	<url>https://github.com/pietrom/jsteward</url>
 	<licenses>
 		<license>
