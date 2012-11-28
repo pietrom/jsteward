@@ -22,6 +22,17 @@
 		    <url>http://javapeanuts.blogspot.com</url>
 	    </developer>
 	</developers>
+	<scm>
+	    <connection>scm:git:https://github.com/pietrom/jsteward.git</connection>
+		<url>scm:git:https://github.com/pietrom/jsteward.git</url>
+		<developerConnection>scm:git:https://github.com/pietrom/jsteward.git</developerConnection>
+	</scm>
+	<ciManagement>
+	    <url>https://travis-ci.org/pietrom/jsteward</url>
+	</ciManagement>
+	<issueManagement>
+	    <url>https://github.com/pietrom/jsteward/issues</url>
+	</issueManagement>
 	<!-- START SNIPPET: compilation-properties -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -13,7 +13,7 @@
       <topBarContainerStyle>width: 90%;</topBarContainerStyle>
       <sideBarEnabled>true</sideBarEnabled>
       <gitHub>
-        <projectId>pietrom/traffic-simulator</projectId>
+        <projectId>pietrom/jsteward</projectId>
         <ribbonOrientation>right</ribbonOrientation>
         <ribbonColor>red</ribbonColor>
       </gitHub>
