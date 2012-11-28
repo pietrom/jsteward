@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Date-Revision-yyyymmdd" content="20121128" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>jsteward - About</title>
+    <title>jsteward - </title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.3.0.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -144,83 +144,13 @@
             
                 <ul class="nav nav-list">
                     <li class="nav-header">Project Documentation</li>
-                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                    
       <li>
     
                           <a href="project-info.html" title="Project Information">
-          <i class="icon-chevron-down"></i>
+          <i class="icon-chevron-right"></i>
         Project Information</a>
-                    <ul class="nav nav-list">
-                      
-      <li class="active">
-    
-            <a href="#"><i class="none"></i>About</a>
-          </li>
-                      
-      <li>
-    
-                          <a href="team-list.html" title="Project Team">
-          <i class="none"></i>
-        Project Team</a>
-            </li>
-                      
-      <li>
-    
-                          <a href="license.html" title="Project License">
-          <i class="none"></i>
-        Project License</a>
-            </li>
-                      
-      <li>
-    
-                          <a href="mail-lists.html" title="Mailing Lists">
-          <i class="none"></i>
-        Mailing Lists</a>
-            </li>
-                      
-      <li>
-    
-                          <a href="dependencies.html" title="Dependencies">
-          <i class="none"></i>
-        Dependencies</a>
-            </li>
-                      
-      <li>
-    
-                          <a href="plugin-management.html" title="Plugin Management">
-          <i class="none"></i>
-        Plugin Management</a>
-            </li>
-                      
-      <li>
-    
-                          <a href="integration.html" title="Continuous Integration">
-          <i class="none"></i>
-        Continuous Integration</a>
-            </li>
-                      
-      <li>
-    
-                          <a href="issue-tracking.html" title="Issue Tracking">
-          <i class="none"></i>
-        Issue Tracking</a>
-            </li>
-                      
-      <li>
-    
-                          <a href="source-repository.html" title="Source Repository">
-          <i class="none"></i>
-        Source Repository</a>
-            </li>
-                      
-      <li>
-    
-                          <a href="project-summary.html" title="Project Summary">
-          <i class="none"></i>
-        Project Summary</a>
-            </li>
-              </ul>
-        </li>
+                  </li>
                                                                                                                                                                                                                     
       <li>
     
@@ -248,7 +178,16 @@
                 
         <div id="bodyColumn"  class="span9" >
                                   
-            <div class="section"><h2>About jsteward<a name="About_jsteward"></a></h2><a name="About_jsteward"></a><p>Console based steward, who always greets ;-)</p></div>
+            <h1>Knowledge Management Guide</h1><div class="section"><h2>Few words regarding our KM approach<a name="Few_words_regarding_our_KM_approach"></a></h2><p>This page explains you how to contribute and change the content of this automatically generated web site.</p><p>To understand why we choose this <a class="externalLink" href="http://en.wikipedia.org/wiki/Don&apos;t_repeat_yourself">DRY</a> approach for our Knowledge Management (KM), you can read the 2 posts:</p>
+<ul>
+  <li><a class="externalLink" href="http://tpierrain.blogspot.fr/2012/11/its-really-time-for-us-to-dry-our-apps.html">Its really time to DRY our apps Knowledge Management!</a></li>
+  <li><a class="externalLink" href="http://cyrille.martraire.com/2012/11/collaborative-artifacts-as-code/">Collaborative Artifacts as Code</a></li>
+</ul></div><div class="section"><h2>How this static web site content is updated?<a name="How_this_static_web_site_content_is_updated"></a></h2><p>Via the execution of the <b><tt>mvn site</tt></b> command-line on the <b>pom.xml</b> file of this project web site (i.e. the maven Project Object Model file). </p><p>This web site template is deliberately packaged as a stand-alone maven project (to ease the integration for non-java projects), but you would rather include our pom.xml content into the pom.xml of your project if you are developing in Java.</p><p>Every time you will call <b><tt>mvn site</tt></b> on this pom.xml, it will generate this static web site, transforming all the Markdown files stored under the location: <b><tt>(pom.xml directory)/src/site/markdown/</tt></b> into <b>.html</b> ones in another target location. </p><p>Notes:</p>
+<ul>
+  <li>Your markdown files should have the <b>.md</b> extension, or even better: the <b>.md.vm</b> extension to support velocity templates (useful to dynamically refer properties stored within the pom.xml file, such as the project name for instance).</li>
+  <li>Even if all documents or images that should be embedded within this site should be stored under the other directory <b><tt>(pom.xml directory)/src/site/resources/</tt></b>, every reference to them from within your markdown files should be assuming the fact that they will be stored aside the .html files after the web site generation.</li>
+  <li>In some rare case (when you change the project name within the pom.xml file for instance), you should call <b><tt>mvn clean</tt></b> before the <b><tt>mvn site</tt></b>.</li>
+</ul></div><div class="section"><h2>How to write proper markdown format files<a name="How_to_write_proper_markdown_format_files"></a></h2><p>As already mentioned above, the maven site plugin force us to follow some conventions (where to store images or documents for instance), I thought the best possible help was to provide you <a href="./SampleMarkdownPage.html">a sample page with the kind of markdown syntax that is working here</a></p></div>
                   </div>
             </div>
           </div>
