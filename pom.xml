@@ -24,7 +24,7 @@
 	</developers>
 	<scm>
 	    <connection>scm:git:https://github.com/pietrom/jsteward.git</connection>
-		<url>scm:git:https://github.com/pietrom/jsteward.git</url>
+		<url>https://github.com/pietrom/jsteward.git</url>
 		<developerConnection>scm:git:https://github.com/pietrom/jsteward.git</developerConnection>
 	</scm>
 	<ciManagement>
