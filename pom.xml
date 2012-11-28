@@ -3,12 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>it.unibs.ing.fp</groupId>
-	<artifactId>automatically-testing-the-console</artifactId>
+	<artifactId>jsteward</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
-	<name>Automatically testing a console-based program</name>
-	<url>http://tritone.ing.unibs.it/fp</url>
+	<description>Console based steward, who always greets</description>
+	<url>https://github.com/pietrom/jsteward</url>
 	<!-- START SNIPPET: compilation-properties -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
